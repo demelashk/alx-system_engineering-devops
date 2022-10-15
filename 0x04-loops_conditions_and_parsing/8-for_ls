@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#list all the file in the present dir and 
+#cut out the number and - and prints the content
+
+list=$(ls)
+
+for i in $list;do
+    echo "$i" | cut -d '-' -f2
+done
